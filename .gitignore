@@ -1,0 +1,18 @@
+# Build output
+rest/target/
+soap/target/
+rmi/out/
+
+# Runtime files
+deploy/local/.runtime/
+tests/results/
+*.log
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Java artifacts
+*.class
+tests/

@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://foodmenu.io/gt/webservice">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:addOrderRequest>
+            <gs:order>
+                <gs:customerName>John Doe</gs:customerName>
+                <gs:deliveryAddress>123 Main Street, Apt 4B, New York, NY 10001</gs:deliveryAddress>
+                <gs:phoneNumber>+1-555-123-4567</gs:phoneNumber>
+                <gs:mealNames>Steak</gs:mealNames>
+                <gs:mealNames>Fish and Chips</gs:mealNames>
+            </gs:order>
+        </gs:addOrderRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

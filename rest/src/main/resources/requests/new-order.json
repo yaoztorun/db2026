@@ -1,0 +1,9 @@
+{
+  "orderId": "order-001",
+  "mealIds": [
+    "5268203c-de76-4921-a3e3-439db69c462a",
+    "4237681a-441f-47fc-a747-8e0169bacea1"
+  ],
+  "deliveryAddress": "Main Street 123, Brussels",
+  "customerName": "John Doe"
+}
