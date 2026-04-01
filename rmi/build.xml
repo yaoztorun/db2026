@@ -16,7 +16,7 @@
 	   The third parameter is filename for the final zip.	   
     ******************************************************** -->
   <property name="main.client" value="staff.BookingClient" />
-  <property name="main.server" value="" />
+  <property name="main.server" value="staff.BookingServer" />
   <property name="zip.filename" value="rmi" />
   <!--
     ********************************************************

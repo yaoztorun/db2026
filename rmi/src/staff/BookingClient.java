@@ -1,54 +1,65 @@
 package staff;
 
+import java.rmi.Naming;
 import java.time.LocalDate;
 import java.util.Set;
 
 import hotel.BookingDetail;
-import hotel.BookingManager;
+import hotel.BookingManagerInterface;
 
 public class BookingClient extends AbstractScriptedSimpleTest {
 
-	private BookingManager bm = null;
+    private BookingManagerInterface bm = null;
 
-	public static void main(String[] args) throws Exception {
-		BookingClient client = new BookingClient();
-		client.run();
-	}
+    public static void main(String[] args) throws Exception {
+        BookingClient client = new BookingClient();
+        client.run();
+    }
 
-	/***************
-	 * CONSTRUCTOR *
-	 ***************/
-	public BookingClient() {
-		try {
-			//Look up the registered remote instance
-			bm = new BookingManager();
-		} catch (Exception exp) {
-			exp.printStackTrace();
-		}
-	}
+    public BookingClient() {
+        try {
+            bm = (BookingManagerInterface) Naming.lookup(
+                "rmi://yigit.switzerlandnorth.cloudapp.azure.com:1099/BookingManager"
+            );
+        } catch (Exception exp) {
+            exp.printStackTrace();
+        }
+    }
 
-	@Override
-	public boolean isRoomAvailable(Integer roomNumber, LocalDate date) {
-		if(bm.isRoomAvailable(roomNumber, date)){
-			return true;
-		}
-		return false;
-	}
+    @Override
+    public boolean isRoomAvailable(Integer roomNumber, LocalDate date) {
+        try {
+            return bm.isRoomAvailable(roomNumber, date);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
-	@Override
-	public void addBooking(BookingDetail bookingDetail) throws Exception {
-		if (isRoomAvailable(bookingDetail.getRoomNumber(), bookingDetail.getDate())){
-			bm.addBooking(bookingDetail);
-		}
-	}
+    @Override
+    public void addBooking(BookingDetail bookingDetail) throws Exception {
+        if (isRoomAvailable(bookingDetail.getRoomNumber(), bookingDetail.getDate())) {
+            bm.addBooking(bookingDetail);
+        }
+    }
 
-	@Override
-	public Set<Integer> getAvailableRooms(LocalDate date) {
-		return bm.getAvailableRooms(date);
-	}
+    @Override
+    public Set<Integer> getAvailableRooms(LocalDate date) {
+        try {
+            return bm.getAvailableRooms(date);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
-	@Override
-	public Set<Integer> getAllRooms() {
-		return bm.getAllRooms();
-	}
+    @Override
+    public Set<Integer> getAllRooms() {
+        try {
+            return bm.getAllRooms();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
