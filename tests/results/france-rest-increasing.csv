@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-30T15:32:32Z,increasing,increasing-c1-r50,1,50,50,50,0,30391,1.645,594.119,336.035,589.806,853.301,1010.564,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T15:32:51Z,increasing,increasing-c5-r50,5,50,250,250,0,18984,13.169,358.869,32.801,343.928,571.392,751.548,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T15:33:05Z,increasing,increasing-c10-r50,10,50,500,500,0,14509,34.461,263.446,82.102,232.802,483.405,675.570,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T15:33:38Z,increasing,increasing-c20-r50,20,50,1000,1000,0,32655,30.623,610.055,182.899,664.095,907.586,1019.941,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET

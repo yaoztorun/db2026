@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-04-02T14:59:35Z,increasing,increasing-c1-r50,1,50,50,50,0,8062,6.202,146.965,91.348,146.075,211.568,284.418,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-04-02T14:59:41Z,increasing,increasing-c5-r50,5,50,250,250,0,6458,38.712,113.644,73.991,106.659,176.761,190.893,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-04-02T14:59:48Z,increasing,increasing-c10-r50,10,50,500,500,0,6761,73.954,118.980,65.574,108.278,198.041,273.976,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-04-02T14:59:56Z,increasing,increasing-c20-r50,20,50,1000,1000,0,7575,132.013,130.556,70.738,120.964,213.181,316.641,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8081/rest/meals,GET

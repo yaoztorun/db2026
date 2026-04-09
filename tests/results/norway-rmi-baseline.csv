@@ -1,0 +1,2 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-03-30T22:09:22Z,baseline,baseline-c1-r20,1,20,20,20,0,3036,6.588,53.976,41.721,47.354,73.823,155.533,dsgt-vm2.norwayeast.cloudapp.azure.com,1099,BookingService

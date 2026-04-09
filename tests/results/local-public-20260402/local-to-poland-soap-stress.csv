@@ -1,0 +1,3 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-04-02T15:09:06Z,stress,stress-c20-r80,20,80,1600,1583,17,47597,33.616,289.998,58.718,75.803,105.859,20000.000,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8082/ws
+2026-04-02T15:10:17Z,stress,stress-c40-r80,40,80,3200,3163,37,71084,45.017,827.268,56.546,76.720,2087.315,20000.000,http://dsgt-vm3.polandcentral.cloudapp.azure.com:8082/ws

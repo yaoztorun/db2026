@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-03-28T19:07:21Z,increasing,increasing-c1-r50,1,50,50,50,0,431,116.009,3.162,1.985,2.726,4.854,8.482,http://localhost:8082/ws
+2026-03-28T19:07:22Z,increasing,increasing-c5-r50,5,50,250,250,0,1168,214.041,7.861,1.783,6.898,16.609,26.572,http://localhost:8082/ws
+2026-03-28T19:07:24Z,increasing,increasing-c10-r50,10,50,500,500,0,1934,258.532,12.742,1.457,11.522,27.161,39.830,http://localhost:8082/ws
+2026-03-28T19:07:28Z,increasing,increasing-c20-r50,20,50,1000,1000,0,3580,279.330,22.970,1.298,20.142,49.939,82.202,http://localhost:8082/ws

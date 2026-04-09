@@ -1,0 +1,2 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-03-31T16:59:05Z,baseline,baseline-c1-r20,1,20,20,20,0,1485,13.468,32.994,28.676,30.045,36.475,80.146,tkuntman.francecentral.cloudapp.azure.com,1099,BookingService

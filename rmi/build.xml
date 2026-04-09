@@ -63,7 +63,7 @@
   </target>
 
   <target name="run.both">
-	<java classname="${main.server}">	
+	<java fork="true" spawn="true" classname="${main.server}">	
 		<classpath refid="cp" />
 	</java>
 	<java classname="${main.client}">	

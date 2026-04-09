@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-03-30T15:38:38Z,increasing,increasing-c1-r50,1,50,50,50,0,26905,1.858,524.450,141.193,531.263,672.145,714.928,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws
+2026-03-30T15:38:56Z,increasing,increasing-c5-r50,5,50,250,250,0,17885,13.978,335.675,24.537,363.454,640.565,977.877,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws
+2026-03-30T15:39:20Z,increasing,increasing-c10-r50,10,50,500,500,0,23970,20.859,449.028,46.206,464.789,640.353,753.688,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws
+2026-03-30T15:39:29Z,increasing,increasing-c20-r50,20,50,1000,1000,0,8588,116.442,129.950,25.130,140.764,218.060,299.371,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws

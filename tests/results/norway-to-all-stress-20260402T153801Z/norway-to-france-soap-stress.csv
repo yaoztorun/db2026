@@ -1,0 +1,3 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-04-02T15:42:46Z,stress,stress-c20-r80,20,80,1600,1598,2,40820,39.196,325.392,57.917,68.283,1113.926,20000.000,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws
+2026-04-02T15:43:40Z,stress,stress-c40-r80,40,80,3200,3197,3,54259,58.976,169.940,57.821,84.496,116.222,20000.000,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws

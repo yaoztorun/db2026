@@ -1,0 +1,4 @@
+timestamp_utc,port,pid,cpu_pct,mem_pct,rss_kb,vsz_kb,etimes_sec,threads,state,cmd
+2026-03-31T16:35:06Z,1100,191842,0.00,8.0,73724,2353516,61632,19,S,"  19 S java -cp /home/tolga/dsgt/rmi/bin -Djava.rmi.server.hostname=dsgt-vm2.norwayeast.cloudapp.azure.com staff.BookingServer"
+2026-03-31T16:35:07Z,1100,191842,0.00,8.0,73724,2353516,61633,20,S,"  20 S java -cp /home/tolga/dsgt/rmi/bin -Djava.rmi.server.hostname=dsgt-vm2.norwayeast.cloudapp.azure.com staff.BookingServer"
+2026-03-31T16:35:08Z,1100,191842,0.98,8.0,73852,2353516,61634,21,S,"  21 S java -cp /home/tolga/dsgt/rmi/bin -Djava.rmi.server.hostname=dsgt-vm2.norwayeast.cloudapp.azure.com staff.BookingServer"

@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-03-30T22:09:23Z,increasing,increasing-c1-r50,1,50,50,50,0,3861,12.950,48.375,37.643,46.154,64.353,104.919,dsgt-vm2.norwayeast.cloudapp.azure.com,1099,BookingService
+2026-03-30T22:09:27Z,increasing,increasing-c5-r50,5,50,250,250,0,3725,67.114,52.998,36.298,48.549,81.334,139.996,dsgt-vm2.norwayeast.cloudapp.azure.com,1099,BookingService
+2026-03-30T22:09:39Z,increasing,increasing-c10-r50,10,50,500,500,0,11227,44.535,112.813,42.279,84.237,213.330,985.938,dsgt-vm2.norwayeast.cloudapp.azure.com,1099,BookingService
+2026-03-30T22:09:44Z,increasing,increasing-c20-r50,20,50,1000,1000,0,4923,203.128,49.359,36.710,47.511,56.044,138.885,dsgt-vm2.norwayeast.cloudapp.azure.com,1099,BookingService

@@ -1,0 +1,2 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-03-30T15:38:11Z,baseline,baseline-c1-r20,1,20,20,20,0,13029,1.535,636.709,464.443,624.794,750.537,809.073,http://tkuntman.francecentral.cloudapp.azure.com:8082/ws

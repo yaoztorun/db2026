@@ -1,0 +1,4 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-28T19:07:41Z,stress,stress-c20-r100,20,100,2000,2000,0,6215,321.802,16.793,0.411,15.074,34.942,55.891,http://localhost:8081/rest/meals,GET
+2026-03-28T19:07:53Z,stress,stress-c40-r100,40,100,4000,4000,0,11498,347.887,32.009,0.786,29.045,66.512,151.519,http://localhost:8081/rest/meals,GET
+2026-03-28T19:08:15Z,stress,stress-c80-r100,80,100,8000,8000,0,22610,353.826,54.188,1.405,47.307,116.929,270.252,http://localhost:8081/rest/meals,GET

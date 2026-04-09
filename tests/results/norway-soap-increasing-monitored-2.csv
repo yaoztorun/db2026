@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-03-31T15:19:40Z,increasing,increasing-c1-r50,1,50,50,50,0,4627,10.806,82.325,66.428,76.357,120.966,140.692,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8082/ws
+2026-03-31T15:19:46Z,increasing,increasing-c5-r50,5,50,250,250,0,5040,49.603,86.498,64.437,78.843,126.294,293.239,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8082/ws
+2026-03-31T15:19:51Z,increasing,increasing-c10-r50,10,50,500,500,0,5271,94.859,92.193,57.246,77.556,173.763,363.087,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8082/ws
+2026-03-31T15:20:09Z,increasing,increasing-c20-r50,20,50,1000,981,19,18365,54.451,550.242,59.702,81.984,523.770,20000.000,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8082/ws

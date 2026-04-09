@@ -1,0 +1,4 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-30T23:42:05Z,stress,stress-c20-r100,20,100,2000,1929,71,114132,17.524,1085.480,56.588,73.215,7220.187,15000.000,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T23:44:18Z,stress,stress-c40-r100,40,100,4000,3847,153,132554,30.176,1283.337,56.801,94.208,10069.094,15000.000,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T23:48:39Z,stress,stress-c80-r100,80,100,8000,7221,779,260543,30.705,2594.205,57.016,126.567,15000.000,15000.000,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET

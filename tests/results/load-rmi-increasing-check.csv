@@ -1,0 +1,3 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-03-30T22:05:43Z,increasing,increasing-c1-r10,1,10,10,10,0,1026,9.747,1.418,0.494,0.871,4.789,4.789,127.0.0.1,1099,BookingService
+2026-03-30T22:05:46Z,increasing,increasing-c5-r10,5,10,50,50,0,2450,20.408,12.088,0.254,1.904,57.516,164.310,127.0.0.1,1099,BookingService

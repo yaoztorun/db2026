@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-04-02T15:00:33Z,increasing,increasing-c1-r50,1,50,50,50,0,2585,19.342,43.054,33.125,41.938,54.453,79.153,dsgt-vm4.swedencentral.cloudapp.azure.com,1099,BookingService
+2026-04-02T15:00:36Z,increasing,increasing-c5-r50,5,50,250,250,0,2875,86.957,43.580,32.966,41.368,55.924,117.518,dsgt-vm4.swedencentral.cloudapp.azure.com,1099,BookingService
+2026-04-02T15:00:39Z,increasing,increasing-c10-r50,10,50,500,500,0,3485,143.472,46.570,31.816,44.094,63.758,104.799,dsgt-vm4.swedencentral.cloudapp.azure.com,1099,BookingService
+2026-04-02T15:00:44Z,increasing,increasing-c20-r50,20,50,1000,1000,0,4420,226.244,48.825,30.796,44.808,70.057,175.024,dsgt-vm4.swedencentral.cloudapp.azure.com,1099,BookingService

@@ -1,0 +1,2 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,endpoint
+2026-03-31T16:35:04Z,baseline,baseline-c1-r20,1,20,20,20,0,3957,5.054,185.132,63.622,102.079,456.065,885.566,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8082/ws

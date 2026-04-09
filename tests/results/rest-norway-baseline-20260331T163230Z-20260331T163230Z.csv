@@ -1,0 +1,4 @@
+timestamp_utc,port,pid,cpu_pct,mem_pct,rss_kb,vsz_kb,etimes_sec,threads,state,cmd
+2026-03-31T16:32:32Z,8081,265018,0.00,19.7,181496,2346408,60821,29,S,"29 S java -jar target/food-rest-service-0.0.1-SNAPSHOT.jar --server.port=8081"
+2026-03-31T16:32:33Z,8081,265018,0.00,19.7,181496,2346408,60822,29,S,"29 S java -jar target/food-rest-service-0.0.1-SNAPSHOT.jar --server.port=8081"
+2026-03-31T16:32:34Z,8081,265018,0.97,19.7,181496,2346408,60823,29,S,"29 S java -jar target/food-rest-service-0.0.1-SNAPSHOT.jar --server.port=8081"

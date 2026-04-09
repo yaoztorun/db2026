@@ -1,0 +1,3 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,host,registry_port,bind_name
+2026-03-30T22:40:57Z,stress,stress-c20-r100,20,100,2000,2000,0,14201,140.835,35.016,15.763,30.603,63.817,244.326,tkuntman.francecentral.cloudapp.azure.com,1099,BookingService
+2026-03-30T22:41:11Z,stress,stress-c40-r100,40,100,4000,4000,0,14174,282.207,34.594,15.697,31.914,51.984,334.828,tkuntman.francecentral.cloudapp.azure.com,1099,BookingService

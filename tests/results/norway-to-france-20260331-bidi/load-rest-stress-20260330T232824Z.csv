@@ -1,0 +1,4 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-30T23:34:52Z,stress,stress-c20-r100,20,100,2000,2000,0,20927,95.570,15000.000,15000.000,15000.000,15000.000,15000.000,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T23:35:36Z,stress,stress-c40-r100,40,100,4000,4000,0,43604,91.735,15000.000,15000.000,15000.000,15000.000,15000.000,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-30T23:37:05Z,stress,stress-c80-r100,80,100,8000,8000,0,88994,89.894,15000.000,15000.000,15000.000,15000.000,15000.000,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET

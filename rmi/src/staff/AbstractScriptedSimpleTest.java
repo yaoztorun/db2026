@@ -57,7 +57,12 @@ public abstract class AbstractScriptedSimpleTest {
 
 		isRoomAvailable(102, today); //false
 		BookingDetail bd3 = new BookingDetail("Dimitri", 102, today);
-		addBooking(bd3);//booking failure
+		try {
+			addBooking(bd3);//booking failure
+			System.out.println("Third booking unexpectedly succeeded [INCORRECT]\n");
+		} catch (Exception expected) {
+			System.out.println("Third booking failed as expected [CORRECT]\n");
+		}
 
 		//Check available rooms after the booking failure
 		System.out.println("Printing the list of available rooms after the third booking failure\n");

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://foodmenu.io/gt/webservice">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ws:addOrderRequest>
+      <ws:order>
+        <ws:customerName>Latency Probe</ws:customerName>
+        <ws:deliveryAddress>Main Street 123, Brussels</ws:deliveryAddress>
+        <ws:phoneNumber>0000000000</ws:phoneNumber>
+        <ws:mealNames>Steak</ws:mealNames>
+        <ws:mealNames>Portobello</ws:mealNames>
+      </ws:order>
+    </ws:addOrderRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

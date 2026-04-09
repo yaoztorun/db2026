@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-28T19:07:29Z,increasing,increasing-c1-r50,1,50,50,50,0,460,108.696,3.613,2.057,3.062,6.704,9.450,http://localhost:8081/rest/meals,GET
+2026-03-28T19:07:30Z,increasing,increasing-c5-r50,5,50,250,250,0,1119,223.414,7.421,1.085,6.470,14.580,23.655,http://localhost:8081/rest/meals,GET
+2026-03-28T19:07:32Z,increasing,increasing-c10-r50,10,50,500,500,0,1883,265.534,11.678,0.893,10.025,24.418,42.683,http://localhost:8081/rest/meals,GET
+2026-03-28T19:07:35Z,increasing,increasing-c20-r50,20,50,1000,1000,0,3299,303.122,19.202,1.035,17.583,39.540,60.304,http://localhost:8081/rest/meals,GET

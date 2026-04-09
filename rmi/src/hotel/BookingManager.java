@@ -1,67 +1,80 @@
 package hotel;
 
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BookingManager implements BookingManagerInterface {
+public class BookingManager extends UnicastRemoteObject implements BookingService {
 
-    private Room[] rooms;
+	private static final long serialVersionUID = 1L;
 
-    public BookingManager() throws RemoteException {
-        this.rooms = initializeRooms();
-    }
+	private Room[] rooms;
 
-    public Set<Integer> getAllRooms() throws RemoteException {
-        Set<Integer> allRooms = new HashSet<Integer>();
-        Iterable<Room> roomIterator = Arrays.asList(rooms);
-        for (Room room : roomIterator) {
-            allRooms.add(room.getRoomNumber());
-        }
-        return allRooms;
-    }
+	public BookingManager(int servicePort) throws RemoteException {
+		super(servicePort);
+		this.rooms = initializeRooms();
+	}
 
-    public boolean isRoomAvailable(Integer roomNumber, LocalDate date) throws RemoteException {
-        for (Room room : rooms) {
-            if (room.getRoomNumber().equals(roomNumber)) {
-                for (BookingDetail booking : room.getBookings()) {
-                    if (booking.getDate().equals(date)) {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-        return false;
-    }
+	@Override
+	public synchronized Set<Integer> getAllRooms() {
+		Set<Integer> allRooms = new HashSet<Integer>();
+		Iterable<Room> roomIterator = Arrays.asList(rooms);
+		for (Room room : roomIterator) {
+			allRooms.add(room.getRoomNumber());
+		}
+		return allRooms;
+	}
 
-    public void addBooking(BookingDetail bookingDetail) throws RemoteException {
-        for (Room room : rooms) {
-            if (room.getRoomNumber().equals(bookingDetail.getRoomNumber())) {
-                room.getBookings().add(bookingDetail);
-                return;
-            }
-        }
-    }
+	@Override
+	public synchronized boolean isRoomAvailable(Integer roomNumber, LocalDate date) {
+		for (Room room : rooms) {
+			if (room.getRoomNumber().equals(roomNumber)) {
+				for (BookingDetail booking : room.getBookings()) {
+					if (booking.getDate().equals(date)) {
+						return false;
+					}
+				}
+				return true;
+			}
+		}
+		return false;
+	}
 
-    public Set<Integer> getAvailableRooms(LocalDate date) throws RemoteException {
-        Set<Integer> availableRooms = new HashSet<Integer>();
-        for (Room room : rooms) {
-            if (isRoomAvailable(room.getRoomNumber(), date)) {
-                availableRooms.add(room.getRoomNumber());
-            }
-        }
-        return availableRooms;
-    }
+	@Override
+	public synchronized void addBooking(BookingDetail bookingDetail) throws RemoteException {
+		if (!isRoomAvailable(bookingDetail.getRoomNumber(), bookingDetail.getDate())) {
+			throw new RemoteException(
+				"Room " + bookingDetail.getRoomNumber() + " is not available on " + bookingDetail.getDate()
+			);
+		}
+		for (Room room : rooms) {
+			if (room.getRoomNumber().equals(bookingDetail.getRoomNumber())) {
+				room.getBookings().add(bookingDetail);
+				return;
+			}
+		}
+	}
 
-    private static Room[] initializeRooms() {
-        Room[] rooms = new Room[4];
-        rooms[0] = new Room(101);
-        rooms[1] = new Room(102);
-        rooms[2] = new Room(201);
-        rooms[3] = new Room(203);
-        return rooms;
-    }
+	@Override
+	public synchronized Set<Integer> getAvailableRooms(LocalDate date) {
+		Set<Integer> avaliableRooms = new HashSet<Integer>();
+		for(Room room : rooms){
+			if(isRoomAvailable(room.getRoomNumber(), date)){
+				avaliableRooms.add(room.getRoomNumber());
+			}
+		}
+		return avaliableRooms;
+	}
+
+	private static Room[] initializeRooms() {
+		Room[] rooms = new Room[4];
+		rooms[0] = new Room(101);
+		rooms[1] = new Room(102);
+		rooms[2] = new Room(201);
+		rooms[3] = new Room(203);
+		return rooms;
+	}
 }

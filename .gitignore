@@ -1,11 +1,11 @@
 # Build output
 rest/target/
 soap/target/
+rmi/bin/
 rmi/out/
 
 # Runtime files
 deploy/local/.runtime/
-tests/results/
 *.log
 
 # OS / editor noise
@@ -15,4 +15,5 @@ tests/results/
 
 # Java artifacts
 *.class
-tests/
+norway-east/
+*.pdf

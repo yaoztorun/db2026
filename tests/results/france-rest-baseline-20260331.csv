@@ -1,0 +1,2 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-30T22:41:06Z,baseline,baseline-c1-r20,1,20,20,20,0,26336,0.759,1289.464,82.108,113.865,5826.144,7399.490,http://tkuntman.francecentral.cloudapp.azure.com:8081/rest/meals,GET

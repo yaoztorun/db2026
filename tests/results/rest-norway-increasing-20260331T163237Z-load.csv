@@ -1,0 +1,5 @@
+run_timestamp,mode,scenario,clients,requests_per_client,total_requests,success,errors,duration_ms,throughput_rps,avg_latency_ms,min_latency_ms,p50_latency_ms,p95_latency_ms,max_latency_ms,url,method
+2026-03-31T16:32:47Z,increasing,increasing-c1-r50,1,50,50,50,0,7950,6.289,144.840,95.241,122.265,221.971,691.680,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-31T16:32:54Z,increasing,increasing-c5-r50,5,50,250,250,0,7269,34.393,129.199,80.424,122.958,186.990,223.752,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-31T16:33:01Z,increasing,increasing-c10-r50,10,50,500,500,0,7032,71.104,121.481,77.922,110.291,171.745,264.873,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
+2026-03-31T16:33:08Z,increasing,increasing-c20-r50,20,50,1000,1000,0,7033,142.187,121.257,76.832,109.279,212.618,288.207,http://dsgt-vm2.norwayeast.cloudapp.azure.com:8081/rest/meals,GET
